@@ -10,6 +10,7 @@
 </template>
 
 <script>
+// neither of the below work
 //import Condition from '@/components/Condition.vue';
 const Condition = require('@/components/Condition.vue').default
 import Vue from "vue";
@@ -23,7 +24,6 @@ export default {
   methods: {
     addCondition()
     {
-      console.log("AC called");
       const ConditionClass = Vue.extend(Condition);
       const conditionInstance = new ConditionClass(); //{ propsData: { id: conditions.length, value: 0 }});
       this.conditions.push(conditionInstance);
