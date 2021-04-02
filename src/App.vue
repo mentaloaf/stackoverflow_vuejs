@@ -10,9 +10,10 @@
 </template>
 
 <script>
-// neither of the below work
+// none of the below work
 //import Condition from '@/components/Condition.vue';
-const Condition = require('@/components/Condition.vue').default
+//const Condition = require('@/components/Condition.vue').default
+Vue.component('Condition', require('@/components/Condition.vue').default);
 import Vue from "vue";
 
 export default {
